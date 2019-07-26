@@ -71,7 +71,7 @@
   
       <!-- Card image -->
       <div class="view overlay">
-        <img class="card-img-top" src="" alt="Card image cap">
+        <img class="card-img-top" src="../img/supreme.png" alt="">
         <a href="#!">
           <div class="mask rgba-white-slight"></div>
         </a>
@@ -80,9 +80,9 @@
       <!-- Card content -->
       <div class="card-body">
         <!-- Title -->
-        <h4 class="card-title">Card title</h4>
+        <h4 class="card-title">Hawaiian</h4>
         <!-- Text -->
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Pineapple toppings to lighten your day</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
         <button type="button" class="btn btn-primary btn-md">Order</button>
   
@@ -97,7 +97,7 @@
   
       <!-- Card image -->
       <div class="view overlay">
-        <img class="card-img-top" src="../WizzaPizza/img/landing.jpg" alt="Card image cap">
+        <img class="card-img-top" src="../img/landing.jpg" alt=">
         <a href="#!">
           <div class="mask rgba-white-slight"></div>
         </a>
@@ -109,7 +109,7 @@
         <!-- Title -->
         <h4 class="card-title">Mushroom</h4>
         <!-- Text -->
-        <p class="card-text"></p>
+        <p class="card-text">Get a little mushroomy today</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
         <button type="button" class="btn btn-primary btn-md">Order</button>
       </div>
@@ -121,32 +121,39 @@
   </div>
   <!-- Card group -->
     </div>
-    <div class="md-form input-group input-group-sm mb-3">
-        <div class="input-group-prepend">
+        <form action="" id="add Details">
+          <div class="details">
         Pizza
         <select class="browser-default custom-select" id="inputGroupSelect01">
             <option selected>Choose...</option>
             <option value="1">Pepperoni</option>
             <option value="2">Mushroom</option>
             <option value="3">Hawaiian</option>
-          </select>
+        </select>
+        </div>
+        <div class="details">
         Size
-      <select class="browser-default custom-select" id="inputGroupSelect01">
-      <option selected>Choose...</option>
-      <option value="1">Small</option>
-      <option value="2">medium</option>
-      <option value="3">Large</option>
-    </select>
+        <select class="browser-default custom-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">Small</option>
+            <option value="2">medium</option>
+            <option value="3">Large</option>
+        </select>
+      </div>
+      <div class="details">
         Topping
         <select class="browser-default custom-select" id="inputGroupSelect01">
             <option selected>Choose...</option>
             <option value="1">Toppings</option>
             <option value="2">Extra Toppings</option>
-          </select>
+        </select>
+      </div>
+      <div class="details">
         Quantity
         <input type="number" class="form-control" max="" min="0">
-        <button type="button" class="btn purple-gradient btn-rounded">CHECKOUT</button>
       </div>
-      </div>
+        <button type="button" id="purchase" class="btn blue btn-rounded">CHECKOUT</button>
+        </form>
+    </div>
 </body>
 </html>

@@ -121,16 +121,8 @@
   </div>
   <!-- Card group -->
     </div>
-         <form action="" id="add Details">
-          <div class="details">
-        Pizza
-        <select class="browser-default custom-select" id="inputGroupSelect01">
-            <option selected>Choose...</option>
-            <option value="1">Pepperoni</option>
-            <option value="2">Mushroom</option>
-            <option value="3">Hawaiian</option>
-        </select>
         </div>
+
         <div class="details">
         Size
         <select class="browser-default custom-select" id="inputGroupSelect01">
@@ -144,25 +136,54 @@
         Crust
         <select class="browser-default custom-select" id="inputGroupSelect01">
           <option selected>Choose...</option>
-          <option value="1">Thick - </option>
-          <option value="2">Soft - 150/=</option>
-          <option value="3">Gluten-free - 150/=)</option>
+          <option value="1">Crispy - 150/= </option>
+          <option value="2">Stuffed - 150/=</option>
+          <option value="3">Gluten-free - 200/=</option>
       </select>
       </div>
-      <div class="details">
-        Topping
-        <select class="browser-default custom-select" id="inputGroupSelect01">
-            <option selected>Choose...</option>
-            <option value="1">Toppings</option>
-            <option value="2">Extra Toppings(100/=)</option>
-        </select>
+      <div class="toppings">
+        Toppings<br>&nbsp;
+        <!-- Default inline 1-->
+<div class="custom-control custom-checkbox custom-control-inline">
+    <input type="checkbox" class="custom-control-input" id="defaultInline1">
+    <label class="custom-control-label" for="defaultInline1">Vegetables - 100/=</label>
+  </div>
+  
+  <!-- Default inline 2-->
+  <div class="custom-control custom-checkbox custom-control-inline">
+    <input type="checkbox" class="custom-control-input" id="defaultInline2">
+    <label class="custom-control-label" for="defaultInline2">Fruits - 150/=</label>
+  </div>
+  
+  <!-- Default inline 3-->
+  <div class="custom-control custom-checkbox custom-control-inline">
+    <input type="checkbox" class="custom-control-input" id="defaultInline3">
+    <label class="custom-control-label" for="defaultInline3">Beef - 200/=</label>
+  </div>
+<!-- Default inline 4-->
+<div class="custom-control custom-checkbox custom-control-inline">
+    <input type="checkbox" class="custom-control-input" id="defaultInline4">
+    <label class="custom-control-label" for="defaultInline4">Chicken - 250/=</label>
+  </div>
+  
+  <!-- Default inline 5-->
+  <div class="custom-control custom-checkbox custom-control-inline">
+    <input type="checkbox" class="custom-control-input" id="defaultInline5">
+    <label class="custom-control-label" for="defaultInline5">Bacon - 300/=</label>
+  </div>
+  
+  <!-- Default inline 6-->
+  <div class="custom-control custom-checkbox custom-control-inline">
+    <input type="checkbox" class="custom-control-input" id="defaultInline6">
+    <label class="custom-control-label" for="defaultInline6">Mushroom - 300/=</label>
+  </div>
       </div>
       <div class="details">
         Quantity
         <input type="number" class="form-control" max="" min="0">
       </div>
         <button type="button" id="purchase" class="btn blue btn-rounded">CHECKOUT</button>
-        </form>
+        
         
     <script src="js/mdb.min.js"></script>
     <script src="js/jquery.js"></script>

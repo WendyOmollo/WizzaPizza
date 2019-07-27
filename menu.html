@@ -60,7 +60,7 @@
         <!-- Text -->
         <p class="card-text">Spiced Beef and Pork just for you</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Order</button>
+        <button type="button" class="ordering">Order</button>
       </div>
       <!-- Card content -->
     </div>
@@ -84,7 +84,7 @@
         <!-- Text -->
         <p class="card-text">Pineapple toppings to lighten your day</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Order</button>
+        <button type="button">Order</button>
   
       </div>
       <!-- Card content -->
@@ -97,7 +97,7 @@
   
       <!-- Card image -->
       <div class="view overlay">
-        <img class="card-img-top" src="../img/landing.jpg" alt=">
+        <img class="card-img-top" src="../img/landing.jpg" alt="">
         <a href="#!">
           <div class="mask rgba-white-slight"></div>
         </a>
@@ -111,7 +111,7 @@
         <!-- Text -->
         <p class="card-text">Get a little mushroomy today</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Order</button>
+        <button type="button">Order</button>
       </div>
       <!-- Card content -->
   
@@ -135,17 +135,26 @@
         Size
         <select class="browser-default custom-select" id="inputGroupSelect01">
             <option selected>Choose...</option>
-            <option value="1">Small</option>
-            <option value="2">medium</option>
-            <option value="3">Large</option>
+            <option value="1">Small- 500/=</option>
+            <option value="2">Medium - 750/=</option>
+            <option value="3">Large - 1000/=</option>
         </select>
+      </div>
+      <div class = "details">
+        Crust
+        <select class="browser-default custom-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">Thick - </option>
+          <option value="2">Soft - 150/=</option>
+          <option value="3">Gluten-free - 150/=)</option>
+      </select>
       </div>
       <div class="details">
         Topping
         <select class="browser-default custom-select" id="inputGroupSelect01">
             <option selected>Choose...</option>
             <option value="1">Toppings</option>
-            <option value="2">Extra Toppings</option>
+            <option value="2">Extra Toppings(100/=)</option>
         </select>
       </div>
       <div class="details">
@@ -154,6 +163,10 @@
       </div>
         <button type="button" id="purchase" class="btn blue btn-rounded">CHECKOUT</button>
         </form>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/scripts.js"></script>
     </div>
 </body>
 </html>

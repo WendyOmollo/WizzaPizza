@@ -82,6 +82,9 @@ html,
   .details{
   width:50%;
   padding-left:100px;
+  display:none;
   }
-  
+  #purchase{
+    display:none;
+  }
   

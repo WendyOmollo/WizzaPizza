@@ -84,7 +84,10 @@ html,
   padding-left:100px;
   display:none;
   }
-  #purchase{
+  #purchase,.toppings{
     display:none;
+  }
+  .toppings{
+    padding-left:103px;
   }
   

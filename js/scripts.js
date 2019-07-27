@@ -12,6 +12,11 @@ $(document).ready(function(){
     $(".details").slideDown();
     $("#purchase").slideDown();
     $(".toppings").slideDown();
+    $("#placeorder").slideDown();
+    
+  });
+  $("#placeorder").click(function(){
+  $("#delivery").slideDown();
   });
   
   });

@@ -13,14 +13,7 @@ $(document).ready(function(){
   });
 });
   // Sets the checked state of a checkbox
-  $(document).ready(function(){
-    var boxes = $(".custom-checkbox");
-    function checkBoxes(event){
-      document.body.div.span = event.target.value;
-      for(var i=0; i<boxes.length; i++){
-        boxes[i].addEventListener(checkBoxes);
-      }
-    }
+  
     // function check(){
     //   $("#defaultInline1").checked = true;
     //   $("#defaultInline2").checked = true;
@@ -43,25 +36,57 @@ $(document).ready(function(){
       event.preventDefault();
   // Gets the input of one pizza
       var onePizza = function add(pizzaSize,pizzaCrust,pizzaTop){
-      var pizzaSize = parseInt($("#inputGroupSelect1 option:selected").val());
-      var pizzaCrust=parseInt($("#inputGroupSelect2 option:selected").val());
-      // var pizzaTop= parseInt($("checkbox:span").val());
-        return pizzaSize + pizzaCrust;
+      var pizzaSize = $("#inputGroupSelect01 option:selected").val();
+      var pizzaCrust  = $("#inputGroupSelect2 option:selected").val();
+      var pizzaTop= $("checkbox:span").val();
+      var pricesPizza = 0;
+  // In each case the price equals the value
+      switch(pizzaSize){
+        case "500":
+          pricesPizza = 500;
+          break;
+        case "750":
+          pricesPizza = 750;
+          break;
+        case "1000":
+          pricesPizza = 1000;
+          break;
+        default:pricesPizza;
+          break;
+      }
+      alert(pizzaSize);
+
+      switch(pizzaCrust){
+        case "crispy":
+          pricesPizza = 150;
+          break;
+        case "stuffed":
+          pricesPizza = 150;
+          break;
+        case "gluten":
+          pricesPizza = 200;
+          break;
+        default:pricesPizza;
+          break;  
+      }
+      alert(pizzaCrust);
+        return parseInt(pizzaSize) + parseInt(pizzaCrust);
       }
   // Multiplies the total of one pizza times how many they are ordered
-       function multiply(){
-        var pizzaQuantity= parseInt($("input#amount").val());
-        return onePizza() * pizzaQuantity;
-      }
-      alert(multiply());
+  alert(onePizza());
+      //  function multiply(){
+      //   var pizzaQuantity= parseInt($("input#amount").val());
+      //   return parseInt(onePizza() * pizzaQuantity);
+      // }
+      // alert(multiply());
 
       
 
   });
  
-  ; 
+
   
-  });
+
 
 
 
@@ -73,12 +98,8 @@ $(document).ready(function(){
     function addDelivery(){
       return multiply() + 150;
     }
-    addDelivery()
     prompt("Delivery fee is 150/=.Enter your location");
-    var location = ""
-    switch(location){
-      case " "
-    }
+    alert(addDelivery());
 
 
   });

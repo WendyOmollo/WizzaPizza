@@ -42,20 +42,20 @@ $(document).ready(function(){
       var pricesPizza = 0;
   // In each case the price equals the value
       switch(pizzaSize){
-        case "500":
+        case "small":
           pricesPizza = 500;
           break;
-        case "750":
+        case "medium":
           pricesPizza = 750;
           break;
-        case "1000":
+        case "large":
           pricesPizza = 1000;
           break;
         default:pricesPizza;
           break;
       }
       alert(pizzaSize);
-
+// In each case the price equals the value
       switch(pizzaCrust){
         case "crispy":
           pricesPizza = 150;
@@ -70,15 +70,16 @@ $(document).ready(function(){
           break;  
       }
       alert(pizzaCrust);
+ // Returns the total of the crust and size
         return parseInt(pizzaSize) + parseInt(pizzaCrust);
       }
   // Multiplies the total of one pizza times how many they are ordered
-  alert(onePizza());
-      //  function multiply(){
-      //   var pizzaQuantity= parseInt($("input#amount").val());
-      //   return parseInt(onePizza() * pizzaQuantity);
-      // }
-      // alert(multiply());
+      
+        function multiply(){
+         var pizzaQuantity= $("input#amount").val();
+         return onePizza() * parseInt(pizzaQuantity);
+       }
+       alert(multiply());
 
       
 

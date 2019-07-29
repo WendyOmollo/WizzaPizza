@@ -2,6 +2,8 @@
 // Displaying the ordering form
 $(document).ready(function(){
   $(".ordering").click(function(){
+//The card group disappears
+    $(".card-group").hide();
     $(".details").slideDown();
     $("#purchase").slideDown();
     $(".toppings").slideDown();
@@ -12,24 +14,7 @@ $(document).ready(function(){
         $("#delivery").slideDown();
   });
 });
-  // Sets the checked state of a checkbox
   
-    // function check(){
-    //   $("#defaultInline1").checked = true;
-    //   $("#defaultInline2").checked = true;
-    //   $("#defaultInline3").checked = true;
-    //   $("#defaultInline4").checked = true;
-    //   $("#defaultInline5").checked = true;
-    //   $("#defaultInline6").checked = true;
-    // }
-    // function uncheck(){
-    //   $("#defaultInline1").checked = false;
-    //   $("#defaultInline2").checked = false;
-    //   $("#defaultInline3").checked = false;
-    //   $("#defaultInline4").checked = false;
-    //   $("#defaultInline5").checked = false;
-    //   $("#defaultInline6").checked = false;
-    // }
   });
    
   $("#placeorder").click(function(event){
@@ -38,7 +23,14 @@ $(document).ready(function(){
       var onePizza = function add(pizzaSize,pizzaCrust,pizzaTop){
       var pizzaSize = $("#inputGroupSelect01 option:selected").val();
       var pizzaCrust  = $("#inputGroupSelect2 option:selected").val();
-      var pizzaTop= $("checkbox:span").val();
+      var pizzaTop = [];
+  // Loops through the toppings checkboxes
+      $.each($("input[name='tops']:checked"),function(){
+      pizzaTop.push($(this).val());
+      console.log(pizzaTop);
+    });
+      console.log(pizzaTop.join(","));
+
       var pricesPizza = 0;
   // In each case the price equals the value
       switch(pizzaSize){
@@ -69,8 +61,11 @@ $(document).ready(function(){
           break;  
       }
  // Returns the total of the crust and size
-        return parseInt(pizzaSize) + parseInt(pizzaCrust);
+          var topPrice = pizzaTop.length * 200;
+        return parseInt(pizzaSize) + parseInt(pizzaCrust) + topPrice;
       }
+     
+
 // Multiplies the total of one pizza times how many they are ordered
         function multiply(){
          var pizzaQuantity= $("input#amount").val();
@@ -82,16 +77,14 @@ $(document).ready(function(){
 // Alerting the user that their order has been taken
   $("#delivery").click(function(){
     $(".toDeliver").show();
-      var deliveryMoney = $("input#Delivery").val(); 
+      var deliveryPlace = $("input#Delivery").val(); 
        function addDelivery(){
-        return multiply() + parseInt(deliveryMoney);
+        return multiply() + 150;
     }
         alert(addDelivery());
+        
   });
 
-  $("#purchase").click(function(){
-    var locatePizza = $("input#location").val();
-      alert("You ordered the following " + pizzaSize + pizzaCrust + pizzaQuantity + "and you paid the delivery fee." + "Your location is " + locatePizza);
-    });
+  
 
 });

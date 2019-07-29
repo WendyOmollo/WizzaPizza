@@ -71,38 +71,44 @@ html,
     background-size: cover;
     background-position: center center;
     height:950px;
-    
   }
   
-
   h1{
     font-family:'Handlee',cursive;
     font-size:500%;
   }
+
   #slogan{
     font-size:180%;
   }
+
   h2{
     font-family:'Handlee',cursive;
   }
+
   li:hover{
     background-color:#a6a6a6;
     border-radius: 30px;
   }
+
   .details,.toDeliver{
   width:50%;
   padding-left:100px;
   display:none;
   }
+
   #purchase,.toppings,#placeorder,#delivery,.toDeliver{
     display:none;
   }
+
   .toppings{
     padding-left:103px;
   }
+
   #placeorder{
     padding-left:5px;
   }
+
   .buttons{
     padding-left:95px;
   }

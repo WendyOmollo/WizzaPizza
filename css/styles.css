@@ -58,12 +58,21 @@ html,
   }
 
   .card {
-    background-color: rgba(126, 123, 215, 0.2);
+    background-color: rgba(234, 234, 240, 0.2);
+    
   }
 
   .md-form label {
     color: #ffffff;
   }
+  #about{
+    background-image: url('../img/landingpage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+  }
+  
 
   h1{
     font-family:'Handlee',cursive;
@@ -79,12 +88,12 @@ html,
     background-color:#a6a6a6;
     border-radius: 30px;
   }
-  .details{
+  .details,.toDeliver{
   width:50%;
   padding-left:100px;
   display:none;
   }
-  #purchase,.toppings,#placeorder,#delivery{
+  #purchase,.toppings,#placeorder,#delivery,.toDeliver{
     display:none;
   }
   .toppings{

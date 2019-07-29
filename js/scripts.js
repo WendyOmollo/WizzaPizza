@@ -72,17 +72,17 @@ $(document).ready(function(){
          return onePizza() * parseInt(pizzaQuantity);
        }
        alert(multiply());
-  
+       $(".toDeliver").show();
  
 // Alerting the user that their order has been taken
   $("#delivery").click(function(){
-    $(".toDeliver").show();
+    
       var deliveryPlace = $("input#Delivery").val(); 
        function addDelivery(){
         return multiply() + 150;
     }
         alert(addDelivery());
-        
+        alert("Thank you for your working with us." + "Your pizza shall be delivered at " + deliveryPlace);
   });
 
   

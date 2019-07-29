@@ -54,7 +54,6 @@ $(document).ready(function(){
         default:pricesPizza;
           break;
       }
-      alert(pizzaSize);
 // In each case the price equals the value
       switch(pizzaCrust){
         case "crispy":
@@ -69,42 +68,30 @@ $(document).ready(function(){
         default:pricesPizza;
           break;  
       }
-      alert(pizzaCrust);
  // Returns the total of the crust and size
         return parseInt(pizzaSize) + parseInt(pizzaCrust);
       }
-  // Multiplies the total of one pizza times how many they are ordered
-      
+// Multiplies the total of one pizza times how many they are ordered
         function multiply(){
          var pizzaQuantity= $("input#amount").val();
          return onePizza() * parseInt(pizzaQuantity);
        }
        alert(multiply());
-
-      
-
-  });
- 
-
   
-
-
-
-
-
-
+ 
 // Alerting the user that their order has been taken
-$(document).ready(function(){
   $("#delivery").click(function(){
-    function addDelivery(){
-      return multiply() + 150;
+    $(".toDeliver").show();
+      var deliveryMoney = $("input#Delivery").val(); 
+       function addDelivery(){
+        return multiply() + parseInt(deliveryMoney);
     }
-    prompt("Delivery fee is 150/=.Enter your location");
-    alert(addDelivery());
-
-
+        alert(addDelivery());
   });
+
   $("#purchase").click(function(){
-  alert("We have received your order.Your pizza shall be delivered to you.Thank you for being a good customer.");
-  });
+    var locatePizza = $("input#location").val();
+      alert("You ordered the following " + pizzaSize + pizzaCrust + pizzaQuantity + "and you paid the delivery fee." + "Your location is " + locatePizza);
+    });
+
 });

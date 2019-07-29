@@ -10,7 +10,7 @@ Wendy Omollo
 * MIT License
 
 ## Setup
-You can git clone,extract and modify the website.You can also deploy it when you follow this link:
+You can git clone,extract and modify the website.You can also deploy it when you follow this link:https://wendyomollo.github.io/WizzaPizza/
 
 ## BBD
 *  **Given** the opportunity to enter the website

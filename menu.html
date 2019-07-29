@@ -22,15 +22,16 @@
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link" href="menu.html">Order Now</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="contacts.html">Contact Us</a>
               </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
             </ul>
           </div>
         </div>
@@ -60,7 +61,7 @@
         <!-- Text -->
         <p class="card-text">Spiced Beef and Pork just for you</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="ordering">Order</button>
+        <button type="button" class="ordering btn blue btn-rounded">Order</button>
       </div>
       <!-- Card content -->
     </div>
@@ -84,7 +85,7 @@
         <!-- Text -->
         <p class="card-text">Pineapple toppings to lighten your day</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button">Order</button>
+        <button type="button" class="btn blue btn-rounded">Order</button>
   
       </div>
       <!-- Card content -->
@@ -111,7 +112,7 @@
         <!-- Text -->
         <p class="card-text">Get a little mushroomy today</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button">Order</button>
+        <button type="button" class="btn blue btn-rounded">Order</button>
       </div>
       <!-- Card content -->
   
@@ -127,55 +128,55 @@
         Size
         <select class="browser-default custom-select" id="inputGroupSelect01">
             <option selected>Choose...</option>
-            <option value="small">Small-<span>500</span>/=</option>
-            <option value="medium">Medium - <span>750</span></=</option>
-            <option value="large">Large - <span>1000</span>/=</option>
+            <option value="500">Small - 500/=</option>
+            <option value="750">Medium - 750/=</option>
+            <option value="1000">Large - 1000/=</option>
         </select>
       </div>
       <div class = "details">
         Crust
-        <select class="browser-default custom-select" id="inputGroupSelect2" onchange="">
+        <select class="browser-default custom-select" id="inputGroupSelect2">
           <option selected>Choose...</option>
-          <option value="crispy">Crispy - <span>150</span>/= </option>
-          <option value="stuffed">Stuffed - <span>150</span>/=</option>
-          <option value="gluten">Gluten-free - <span>200</span>/=</option>
+          <option value="150">Crispy - 150/= </option>
+          <option value="150">Stuffed - 150/=</option>
+          <option value="200">Gluten-free - 200/=</option>
       </select>
       </div>
       <div class="toppings">
         Toppings<br>&nbsp;
         <!-- Default inline 1-->
 <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline1" onclick="check()">
-    <label class="custom-control-label" for="defaultInline1">Vegetables - <span>100</span>/=</label>
+    <input type="checkbox" class="custom-control-input" id="defaultInline1" value = "100">
+    <label class="custom-control-label" for="defaultInline1">Vegetables - 100/=</label>
   </div>
   
   <!-- Default inline 2-->
   <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline2">
-    <label class="custom-control-label" for="defaultInline2">Fruits - <span>150</span>/=</label>
+    <input type="checkbox" class="custom-control-input" id="defaultInline2" value="150">
+    <label class="custom-control-label" for="defaultInline2">Fruits - 150/=</label>
   </div>
   
   <!-- Default inline 3-->
   <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline3">
-    <label class="custom-control-label" for="defaultInline3">Beef - <span>200</span>/=</label>
+    <input type="checkbox" class="custom-control-input" id="defaultInline3" value="200">
+    <label class="custom-control-label" for="defaultInline3">Beef - 200/=</label>
   </div>
 <!-- Default inline 4-->
 <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline4">
-    <label class="custom-control-label" for="defaultInline4">Chicken - <span>250</span>/=</label>
+    <input type="checkbox" class="custom-control-input" id="defaultInline4" value="250">
+    <label class="custom-control-label" for="defaultInline4">Chicken - 250/=</label>
   </div>
   
   <!-- Default inline 5-->
   <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline5">
-    <label class="custom-control-label" for="defaultInline5">Bacon - <span>300</span>/=</label>
+    <input type="checkbox" class="custom-control-input" id="defaultInline5" value="300">
+    <label class="custom-control-label" for="defaultInline5">Bacon - 300/=</label>
   </div>
   
   <!-- Default inline 6-->
   <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline6">
-    <label class="custom-control-label" for="defaultInline6">Mushroom - <span>300</span>/=</label>
+    <input type="checkbox" class="custom-control-input" id="defaultInline6" value="300">
+    <label class="custom-control-label" for="defaultInline6">Mushroom - 300/=</label>
   </div>
       </div>
       <div class="details">
@@ -186,6 +187,12 @@
         <button type ="button" id="placeorder" class="btn yellow btn-rounded">Place order</button>
         <button type="button" id="delivery" class="btn pink btn-rounded">delivery</button>
         <button type="button" id="purchase" class="btn blue btn-rounded">CHECKOUT</button>
+        <div class="toDeliver">
+        Delivery fee is 150/=
+        <input type="number" id="Delivery" min="150" max="150"><br>
+        Enter your location
+        <input type="text" id="location" required>
+       </div>
       </div>
     
         

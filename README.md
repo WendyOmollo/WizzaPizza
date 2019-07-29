@@ -33,5 +33,5 @@ You can git clone,extract and modify the website.You can also deploy it when you
 * JQuery
 
 ## Known Bugs
-The **checkout** button doesn't give the alert
+It might not be responsive.
 

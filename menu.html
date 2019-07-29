@@ -143,57 +143,57 @@
       </select>
       </div>
       <div class="toppings">
-        Toppings<br>&nbsp;
+        Toppings @ 200/=<br>&nbsp;
         <!-- Default inline 1-->
 <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline1" value = "100">
-    <label class="custom-control-label" for="defaultInline1">Vegetables - 200/=</label>
+    <input type="checkbox" name="tops" class="custom-control-input" id="defaultInline1" value = "200">
+    <label class="custom-control-label" for="defaultInline1">Vegetables</label>
   </div>
   
   <!-- Default inline 2-->
-  <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline2" value="150">
-    <label class="custom-control-label" for="defaultInline2">Fruits - 200/=</label>
+  <div class="custom-control  custom-checkbox custom-control-inline">
+    <input type="checkbox" name="tops" class="custom-control-input" id="defaultInline2" value="200">
+    <label class="custom-control-label" for="defaultInline2">Fruits</label>
   </div>
   
   <!-- Default inline 3-->
   <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline3" value="200">
-    <label class="custom-control-label" for="defaultInline3">Beef - 200/=</label>
+    <input type="checkbox" name="tops" class="custom-control-input" id="defaultInline3" value="200">
+    <label class="custom-control-label" for="defaultInline3">Beef</label>
   </div>
 <!-- Default inline 4-->
 <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline4" value="250">
-    <label class="custom-control-label" for="defaultInline4">Chicken - 200/=</label>
+    <input type="checkbox" name="tops" class="custom-control-input" id="defaultInline4" value="200">
+    <label class="custom-control-label" for="defaultInline4">Chicken</label>
   </div>
   
   <!-- Default inline 5-->
   <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline5" value="300">
-    <label class="custom-control-label" for="defaultInline5">Bacon - 200/=</label>
+    <input type="checkbox" name="tops" class="custom-control-input" id="defaultInline5" value="200">
+    <label class="custom-control-label" for="defaultInline5">Bacon</label>
   </div>
   
   <!-- Default inline 6-->
   <div class="custom-control custom-checkbox custom-control-inline">
-    <input type="checkbox" class="custom-control-input" id="defaultInline6" value="300">
-    <label class="custom-control-label" for="defaultInline6">Mushroom - 200/=</label>
+    <input type="checkbox" name="tops" class="custom-control-input" id="defaultInline6" value="Mushroom">
+    <label class="custom-control-label" for="defaultInline6">Mushroom</label>
   </div>
       </div>
       <div class="details">
         Quantity
         <input type="number" id="amount" class="form-control" max="" min="0">
       </div><br>
+      <div class="toDeliver">
+          Delivery fee is 150/= .<br> Enter your location
+          <input type="text" id="Delivery"required><br>
+          <!-- Enter your location
+          <input type="text" id="location" required> -->
+         </div>
       <div class="buttons">
         <button type ="button" id="placeorder" class="btn yellow btn-rounded">Place order</button>
         <button type="button" id="delivery" class="btn pink btn-rounded">checkout</button>
-        <button type="button" id="purchase" class="btn blue btn-rounded">delivery</button>
-        <div class="toDeliver">
-        Delivery fee is 150/=
-        <input type="number" id="Delivery" min="150" max="150"><br>
-        Enter your location
-        <input type="text" id="location" required>
-       </div>
       </div>
+      <div class="show-details"></div>
     
         
     <script src="js/mdb.min.js"></script>
